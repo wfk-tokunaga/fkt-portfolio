@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -6,10 +12,12 @@ header {
 header nav ul {
     display: flex;
     justify-content: space-between;
+    list-style: none;
 }
 
 header nav ul li {
-    list-style: none;
+    padding: 10px 15px;
+    font-size: 1.55vw;
 }
 
 header nav ul li a {
@@ -28,6 +36,37 @@ header nav ul li a {
     background-color: lightcoral;
 }
 
+.what-ive-done h2 {
+    /* text-align: right; */
+    width: 30%;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects h2 {
+    /* When do I wanna use width? */
+    flex: 1 30%;
+}
+
+
 .reach-me {
     background-color: lightblue;
+}
+
+.reach-me ul {
+    /* Need to add weird flex rules */
+    justify-content: space-between;
+}
+
+.reach-me ul li {
+    list-style: none;
+}
+
+
+/* Have a class for flex so that we don't have to keep writing it */
+.flex-row {
+    display: flex;
 }
