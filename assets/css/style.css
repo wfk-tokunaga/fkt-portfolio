@@ -15,3 +15,19 @@ header nav ul li {
 header nav ul li a {
     text-decoration: none;
 }
+
+.hero {
+    background-color: lightcoral;
+}
+
+.who-i-am {
+    background-color: lightblue;
+}
+
+.what-ive-done {
+    background-color: lightcoral;
+}
+
+.reach-me {
+    background-color: lightblue;
+}
