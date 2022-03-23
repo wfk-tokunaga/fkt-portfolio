@@ -16,7 +16,7 @@ header {
 
 header h1 {
     font-weight: bold;
-    font-size: 36;
+    font-size: 1.55vw;
     margin: 0;
 }
 
@@ -32,8 +32,9 @@ header nav ul {
 }
 
 header nav ul li a {
-    padding: 0px 15px;
-    font-size: 1.55vw;
+    font-weight: lighter;
+    padding: 10px 15px;
+    font-size: 1.45vw;
     text-decoration: none;
 }
 
@@ -47,7 +48,7 @@ section {
     background-image: url("../images/portfolioHero.JPG");
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 800px;
     display: flex;
     justify-content: flex-end;
 }
@@ -65,30 +66,23 @@ section {
 
 .who-i-am {
     margin: 50px auto;
-    background-color: lightblue;
+    /* background-color: lightblue; */
     width: 80%;
     display: flex;
 }
 
-.who-i-am h2 {
-    flex: 1 30%;
-    text-align: right;
-}
-
 .who-i-am p {
     flex: 2 70%;
+    font-size: 1.0vw;
 }
 
 .what-ive-done {
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
     display: flex;
     width: 80%;
     margin: 50px auto;
 }
 
-.what-ive-done h2 {
-    flex: 1 30%;
-}
 
 .projects {
     display: flex;
@@ -122,10 +116,6 @@ section {
     width: 80%;
 }
 
-.reach-me h2 {
-    flex: 1 30%;
-}
-
 .reach-me ul {
     /* Need to add weird flex rules */
     justify-content: space-around;
@@ -136,8 +126,14 @@ section {
     list-style: none;
 }
 
+.reach-me ul li a {
+    font-size: 30px;
+}
+
+
+
 .section-title {
-    flex: 1 30%;
+    flex: 1 20%;
     text-align: right;
     padding: 5px 25px 25px 10px;
     padding-right: 25px;
