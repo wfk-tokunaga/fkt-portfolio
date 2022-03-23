@@ -11,7 +11,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 20px 35px;
+    padding: 15px 35px;
 }
 
 header h1 {
@@ -20,23 +20,26 @@ header h1 {
     margin: 0;
 }
 
+header nav {
+    margin: 7px 0;
+}
+
 header nav ul {
+    margin: auto;
     display: flex;
     justify-content: space-between;
     list-style: none;
 }
 
-header nav ul li {
+header nav ul li a {
     padding: 0px 15px;
     font-size: 1.55vw;
-}
-
-header nav ul li a {
     text-decoration: none;
 }
 
 section {
-    padding: 40px;
+    padding: 30px;
+    align-items: flex-start;
 }
 
 .hero {
@@ -50,10 +53,14 @@ section {
 }
 
 .hero h2 {
-    font-size: 55px;
+    font-size: 45px;
     font-style: italic;
     color: white;
-    margin: 20px 20px;
+    background-color: black;
+    padding: 5px;
+    margin: 0;
+    align-self: flex-end;
+
 }
 
 .who-i-am {
@@ -75,9 +82,7 @@ section {
 .what-ive-done {
     background-color: lightcoral;
     display: flex;
-    /* flex-wrap: wrap; */
     width: 80%;
-    align-items: center;
     margin: 50px auto;
 }
 
@@ -89,12 +94,30 @@ section {
     display: flex;
     flex-wrap: wrap;
     flex: 2 70%;
-    justify-content: space-between;
+    justify-content: space-around;
+    /* margin: auto 15px */
+}
+
+.project {
+    background-color: white;
+    margin: 0px 10px 10px 10px;
+    flex: 1;
+    /* width: 50%; */
+}
+
+.project-info {
+    padding: 5px;
+    line-height: 1.3;
+}
+
+.project img {
+    width: 100%;
+    height: 70%;
+    /* object-fit: fill; */
 }
 
 .reach-me {
     margin: 50px auto;
-    background-color: lightblue;
     display: flex;
     width: 80%;
 }
@@ -105,7 +128,7 @@ section {
 
 .reach-me ul {
     /* Need to add weird flex rules */
-    justify-content: space-between;
+    justify-content: space-around;
     flex: 2 70%;
 }
 
@@ -113,13 +136,15 @@ section {
     list-style: none;
 }
 
-
 .section-title {
     flex: 1 30%;
     text-align: right;
     padding: 5px 25px 25px 10px;
     padding-right: 25px;
     text-decoration: underline;
+    font-size: 40px;
+    border-right: 3px solid black;
+    margin-right: 10px;
 }
 
 /* Have a class for flex so that we don't have to keep writing it */
