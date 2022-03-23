@@ -4,9 +4,20 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 header {
     display: flex;
     justify-content: space-between;
+    padding: 20px 35px;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36;
+    margin: 0;
 }
 
 header nav ul {
@@ -16,7 +27,7 @@ header nav ul {
 }
 
 header nav ul li {
-    padding: 10px 15px;
+    padding: 0px 15px;
     font-size: 1.55vw;
 }
 
@@ -25,46 +36,85 @@ header nav ul li a {
 }
 
 .hero {
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
+    background-image: url("../images/portfolioHero.JPG");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero h2 {
+    font-size: 55px;
+    font-style: italic;
+    color: white;
+    margin: 20px 20px;
 }
 
 .who-i-am {
+    margin: 50px auto;
     background-color: lightblue;
+    width: 80%;
+    display: flex;
+}
+
+.who-i-am h2 {
+    flex: 1 30%;
+    text-align: right;
+}
+
+.who-i-am p {
+    flex: 2 70%;
 }
 
 .what-ive-done {
     background-color: lightcoral;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    margin: 50px auto;
 }
 
 .what-ive-done h2 {
-    /* text-align: right; */
-    width: 30%;
+    flex: 1 30%;
 }
 
 .projects {
     display: flex;
+    flex: 2 70%;
     justify-content: space-between;
 }
 
-.projects h2 {
-    /* When do I wanna use width? */
-    flex: 1 30%;
+.reach-me {
+    margin: 50px auto;
+    background-color: lightblue;
+    display: flex;
+    width: 80%;
 }
 
-
-.reach-me {
-    background-color: lightblue;
+.reach-me h2 {
+    flex: 1 30%;
 }
 
 .reach-me ul {
     /* Need to add weird flex rules */
     justify-content: space-between;
+    flex: 2 70%;
 }
 
 .reach-me ul li {
     list-style: none;
 }
 
+
+.section-title {
+    flex: 1 30%;
+    text-align: right;
+    padding: 5px 25px 25px 10px;
+    padding-right: 25px;
+    text-decoration: underline;
+}
 
 /* Have a class for flex so that we don't have to keep writing it */
 .flex-row {
