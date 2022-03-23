@@ -35,6 +35,10 @@ header nav ul li a {
     text-decoration: none;
 }
 
+section {
+    padding: 40px;
+}
+
 .hero {
     /* background-color: lightcoral; */
     background-image: url("../images/portfolioHero.JPG");
